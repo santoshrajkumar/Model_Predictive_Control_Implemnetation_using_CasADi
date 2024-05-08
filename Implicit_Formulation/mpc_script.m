@@ -29,7 +29,7 @@ params.xmax=diag([deg2rad(40); 0.2])*ones(params.nstates,1);
 
 %% Run the Simulation 
 tsim=20;
-% time vector from 0-tsim with with samplting time = 0.2
+% time vector from 0-tsim with with samplting time = 0.1
 % the sampling time can differ
 tspan = 0:0.1:tsim; 
 
