@@ -85,8 +85,8 @@ solver = nlpsol('solver', 'ipopt', nlp_prob,opts);
 % constraints as arguments
 args = struct;
 % imposing the equality constraints
-args.lbg(1:params.nstates*(params.mpc_horizon+1))=0;
-args.ubg(1:params.nstates*(params.mpc_horizon+1))=0;
+args.lbg(1:length(g))=0;
+args.ubg(1:length(g))=0;
 
 % imposing the state constraints
 args.lbx(1:params.nstates:(params.mpc_horizon+1)*params.nstates,1)=-deg2rad(40);
