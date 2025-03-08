@@ -2,9 +2,7 @@ clc; clear; close all;
 
 addpath function_files
 
-addpath(['/Users/santosh/Library/CloudStorage/' ...
-            'OneDrive-TheOhioStateUniversity/Research/'...
-                            'casadi-3.6.4-osx64-matlab2018b'])
+%addpath to CasADI
 
 import casadi.*
 
